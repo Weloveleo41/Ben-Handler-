@@ -3,85 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Info Ventures - The information edge. Discover, build, and scale business opportunities in the information economy.">
+    <meta name="description" content="Info Ventures operates in the information space, specialising in business opportunities. We find, build, and scale ventures where information is the edge.">
     <title>Info Ventures</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Main Screen -->
-    <main class="screen">
-        <!-- Subtle grid bg -->
-        <div class="bg-grid"></div>
-        <div class="bg-glow"></div>
 
-        <!-- Small top logo -->
-        <div class="top-bar">
-            <div class="logo">
-                <div class="logo-mark">IV</div>
-                <span class="logo-text">Info Ventures</span>
-            </div>
+    <!-- Nav -->
+    <nav class="nav">
+        <a href="#" class="nav-logo">Info Ventures</a>
+        <div class="nav-links">
+            <a href="#thesis">Thesis</a>
+            <a href="#what-we-do">What We Do</a>
+            <a href="#ventures">Ventures</a>
+            <a href="#team">Team</a>
+            <a href="#contact" class="nav-cta">Get in Touch</a>
         </div>
+        <button class="nav-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
 
-        <!-- Center content -->
-        <div class="center">
-            <!-- Icon -->
-            <div class="icon-wrapper">
-                <svg class="icon-main" viewBox="0 0 80 80" fill="none">
-                    <!-- Lightbulb / information symbol -->
-                    <circle cx="40" cy="40" r="38" stroke="url(#grad)" stroke-width="2" opacity="0.3"/>
-                    <circle cx="40" cy="40" r="28" stroke="url(#grad)" stroke-width="1.5" opacity="0.15"/>
-                    <path d="M40 18C30.06 18 22 26.06 22 36c0 6.63 3.58 12.43 8.92 15.58V56a3 3 0 003 3h12.16a3 3 0 003-3v-4.42C55.42 48.43 59 42.63 59 36c0-9.94-8.06-18-19-18z" fill="url(#grad)" opacity="0.15"/>
-                    <path d="M40 18C30.06 18 22 26.06 22 36c0 6.63 3.58 12.43 8.92 15.58V56a3 3 0 003 3h12.16a3 3 0 003-3v-4.42C55.42 48.43 59 42.63 59 36c0-9.94-8.06-18-19-18z" stroke="url(#grad)" stroke-width="2"/>
-                    <line x1="33" y1="62" x2="47" y2="62" stroke="url(#grad)" stroke-width="2" stroke-linecap="round"/>
-                    <line x1="35" y1="66" x2="45" y2="66" stroke="url(#grad)" stroke-width="2" stroke-linecap="round"/>
-                    <line x1="40" y1="30" x2="40" y2="44" stroke="url(#grad)" stroke-width="2.5" stroke-linecap="round"/>
-                    <circle cx="40" cy="26" r="2" fill="url(#grad)"/>
-                    <defs>
-                        <linearGradient id="grad" x1="22" y1="18" x2="59" y2="66" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#10b892"/>
-                            <stop offset="1" stop-color="#0ea5e9"/>
-                        </linearGradient>
-                    </defs>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-inner">
+            <p class="hero-label">Info Ventures</p>
+            <h1 class="hero-headline">
+                The best business opportunities are hiding in plain sight &mdash; inside information most people overlook.
+            </h1>
+            <p class="hero-sub">
+                We operate in the information space. We find asymmetric business opportunities, validate them with data, and build ventures that scale.
+            </p>
+            <a href="#what-we-do" class="hero-arrow" aria-label="Scroll down">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
                 </svg>
-            </div>
+            </a>
+        </div>
+    </section>
 
-            <!-- Headline -->
-            <h1 class="headline">The Information Edge.</h1>
-            <p class="tagline">Discover. Build. Scale.</p>
-            <p class="description">Business opportunities in the information economy.</p>
-
-            <!-- CTA -->
-            <div class="actions">
-                <a href="mailto:hello@infoventures.com.au" class="btn-main">Get in Touch</a>
-            </div>
-
-            <!-- Three pillars -->
-            <div class="pillars">
-                <div class="pillar">
-                    <span class="pillar-label">Discover</span>
-                    <span class="pillar-desc">Biz op intelligence</span>
+    <!-- Thesis -->
+    <section id="thesis" class="thesis">
+        <div class="container">
+            <div class="thesis-grid">
+                <div class="thesis-left">
+                    <span class="label">Thesis</span>
                 </div>
-                <div class="pillar-divider"></div>
-                <div class="pillar">
-                    <span class="pillar-label">Build</span>
-                    <span class="pillar-desc">Venture creation</span>
-                </div>
-                <div class="pillar-divider"></div>
-                <div class="pillar">
-                    <span class="pillar-label">Scale</span>
-                    <span class="pillar-desc">Growth systems</span>
+                <div class="thesis-right">
+                    <p class="thesis-text">
+                        Most people chase capital. We chase information.
+                    </p>
+                    <p class="thesis-body">
+                        In the information economy, the edge isn't money &mdash; it's knowing what others don't.
+                        We identify business opportunities where information asymmetry creates outsized returns.
+                        Then we move fast.
+                    </p>
+                    <p class="thesis-body">
+                        We're not consultants. We're operators. Every venture we recommend is one we'd put our own capital into.
+                    </p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Bottom -->
-        <div class="bottom-bar">
-            <span class="bottom-text">&copy; 2025 Info Ventures. Sydney, Australia.</span>
+    <!-- What We Do -->
+    <section id="what-we-do" class="what-we-do">
+        <div class="container">
+            <span class="label">What We Do</span>
+            <h2 class="section-headline">Three ways we create value.</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <span class="service-num">01</span>
+                    <h3>Biz Op Discovery</h3>
+                    <p>
+                        We continuously scan markets for emerging business opportunities
+                        with high upside potential. First-mover advantage, every time.
+                        Data-driven, pattern-matched, and validated before we move.
+                    </p>
+                </div>
+                <div class="service">
+                    <span class="service-num">02</span>
+                    <h3>Venture Building</h3>
+                    <p>
+                        From concept to cash flow. We build information-driven businesses
+                        with the right positioning, the right timing, and the right
+                        go-to-market strategy to win.
+                    </p>
+                </div>
+                <div class="service">
+                    <span class="service-num">03</span>
+                    <h3>Market Intelligence</h3>
+                    <p>
+                        Real-time data, trend analysis, and competitive intelligence
+                        that gives our partners clarity on where the market is heading
+                        before everyone else sees it.
+                    </p>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
+
+    <!-- Ventures / Portfolio -->
+    <section id="ventures" class="ventures">
+        <div class="container">
+            <span class="label">Ventures</span>
+            <h2 class="section-headline">Active opportunities.</h2>
+            <p class="section-sub">
+                These are the spaces we're currently operating in. Each one vetted,
+                validated, and ready for execution.
+            </p>
+            <div class="ventures-grid">
+                <article class="venture">
+                    <div class="venture-top">
+                        <h3>Digital Information Products</h3>
+                        <span class="venture-tag live">Live</span>
+                    </div>
+                    <p>High-margin digital products in underserved information niches.</p>
+                    <div class="venture-stats">
+                        <div><span class="stat-val">340%</span><span class="stat-label">Avg. ROI</span></div>
+                        <div><span class="stat-val">30d</span><span class="stat-label">To Revenue</span></div>
+                    </div>
+                </article>
+                <article class="venture">
+                    <div class="venture-top">
+                        <h3>Data Brokerage & Licensing</h3>
+                        <span class="venture-tag live">Live</span>
+                    </div>
+                    <p>Aggregate, package, and license valuable data sets to businesses hungry for insights.</p>
+                    <div class="venture-stats">
+                        <div><span class="stat-val">280%</span><span class="stat-label">Avg. ROI</span></div>
+                        <div><span class="stat-val">45d</span><span class="stat-label">To Revenue</span></div>
+                    </div>
+                </article>
+                <article class="venture">
+                    <div class="venture-top">
+                        <h3>AI-Powered Advisory</h3>
+                        <span class="venture-tag soon">Coming Soon</span>
+                    </div>
+                    <p>Premium business intelligence and advisory services powered by AI, delivered at scale.</p>
+                    <div class="venture-stats">
+                        <div><span class="stat-val">500%+</span><span class="stat-label">Avg. ROI</span></div>
+                        <div><span class="stat-val">60d</span><span class="stat-label">To Revenue</span></div>
+                    </div>
+                </article>
+                <article class="venture">
+                    <div class="venture-top">
+                        <h3>Newsletter & Media Assets</h3>
+                        <span class="venture-tag live">Live</span>
+                    </div>
+                    <p>Acquire and grow niche newsletters and media properties with built-in distribution.</p>
+                    <div class="venture-stats">
+                        <div><span class="stat-val">200%</span><span class="stat-label">Avg. ROI</span></div>
+                        <div><span class="stat-val">21d</span><span class="stat-label">To Revenue</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="team">
+        <div class="container">
+            <span class="label">Team</span>
+            <h2 class="section-headline">Built from operating, not observing.</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">BH</div>
+                    <h3>Ben Handler</h3>
+                    <span class="member-role">Founder & Managing Partner</span>
+                    <p>Serial entrepreneur with deep expertise in information-driven businesses and property markets across Australia.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">+</div>
+                    <h3>Join Us</h3>
+                    <span class="member-role">We're growing</span>
+                    <p>We're always looking for sharp operators who think differently about business and information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-inner">
+                <h2>Got a biz op that's<br>impossible to ignore?</h2>
+                <p>
+                    Whether you've found an information edge or want us to find one for you,
+                    we want to hear from you.
+                </p>
+                <a href="mailto:hello@infoventures.com.au" class="contact-link">
+                    hello@infoventures.com.au
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-logo">Info Ventures</span>
+                <span class="footer-copy">&copy; 2025. Sydney, Australia.</span>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
