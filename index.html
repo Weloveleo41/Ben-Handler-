@@ -3,445 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Info Ventures - Operating in the information space, specialising in business opportunities. Discover, build, and scale profitable ventures.">
-    <title>Info Ventures | Business Opportunities in the Information Age</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Info Ventures - The information edge. Discover, build, and scale business opportunities in the information economy.">
+    <title>Info Ventures</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">
+    <!-- Main Screen -->
+    <main class="screen">
+        <!-- Subtle grid bg -->
+        <div class="bg-grid"></div>
+        <div class="bg-glow"></div>
+
+        <!-- Small top logo -->
+        <div class="top-bar">
+            <div class="logo">
                 <div class="logo-mark">IV</div>
                 <span class="logo-text">Info Ventures</span>
-            </a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#opportunities">Opportunities</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#ventures">Ventures</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#start" class="nav-cta">Get Started</a></li>
-            </ul>
+            </div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg-grid"></div>
-        <div class="hero-content">
-            <div class="hero-badge">The Information Edge</div>
-            <h1 class="hero-title">
-                <span class="hero-line">Your next venture</span>
-                <span class="hero-line">starts with</span>
-                <span class="hero-line highlight">information.</span>
-            </h1>
-            <p class="hero-subtitle">
-                We find, build, and scale business opportunities in the information economy.
-                Turn data into decisions. Turn decisions into revenue.
-            </p>
-            <div class="hero-actions">
-                <a href="#opportunities" class="btn btn-primary">
-                    Explore Opportunities
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-                <a href="#how-it-works" class="btn btn-ghost">Learn More</a>
+        <!-- Center content -->
+        <div class="center">
+            <!-- Icon -->
+            <div class="icon-wrapper">
+                <svg class="icon-main" viewBox="0 0 80 80" fill="none">
+                    <!-- Lightbulb / information symbol -->
+                    <circle cx="40" cy="40" r="38" stroke="url(#grad)" stroke-width="2" opacity="0.3"/>
+                    <circle cx="40" cy="40" r="28" stroke="url(#grad)" stroke-width="1.5" opacity="0.15"/>
+                    <path d="M40 18C30.06 18 22 26.06 22 36c0 6.63 3.58 12.43 8.92 15.58V56a3 3 0 003 3h12.16a3 3 0 003-3v-4.42C55.42 48.43 59 42.63 59 36c0-9.94-8.06-18-19-18z" fill="url(#grad)" opacity="0.15"/>
+                    <path d="M40 18C30.06 18 22 26.06 22 36c0 6.63 3.58 12.43 8.92 15.58V56a3 3 0 003 3h12.16a3 3 0 003-3v-4.42C55.42 48.43 59 42.63 59 36c0-9.94-8.06-18-19-18z" stroke="url(#grad)" stroke-width="2"/>
+                    <line x1="33" y1="62" x2="47" y2="62" stroke="url(#grad)" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="35" y1="66" x2="45" y2="66" stroke="url(#grad)" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="40" y1="30" x2="40" y2="44" stroke="url(#grad)" stroke-width="2.5" stroke-linecap="round"/>
+                    <circle cx="40" cy="26" r="2" fill="url(#grad)"/>
+                    <defs>
+                        <linearGradient id="grad" x1="22" y1="18" x2="59" y2="66" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#10b892"/>
+                            <stop offset="1" stop-color="#0ea5e9"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
             </div>
-            <div class="hero-stats">
-                <div class="hero-stat">
-                    <span class="hero-stat-number" data-count="150">0</span>
-                    <span class="hero-stat-suffix">+</span>
-                    <span class="hero-stat-label">Active Ventures</span>
-                </div>
-                <div class="hero-stat-divider"></div>
-                <div class="hero-stat">
-                    <span class="hero-stat-number" data-count="12">0</span>
-                    <span class="hero-stat-suffix">M+</span>
-                    <span class="hero-stat-label">Revenue Generated</span>
-                </div>
-                <div class="hero-stat-divider"></div>
-                <div class="hero-stat">
-                    <span class="hero-stat-number" data-count="98">0</span>
-                    <span class="hero-stat-suffix">%</span>
-                    <span class="hero-stat-label">Client Retention</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Ticker / Marquee -->
-    <section class="ticker">
-        <div class="ticker-track">
-            <div class="ticker-content">
-                <span>Business Opportunities</span>
-                <span class="ticker-dot"></span>
-                <span>Information Arbitrage</span>
-                <span class="ticker-dot"></span>
-                <span>Data-Driven Ventures</span>
-                <span class="ticker-dot"></span>
-                <span>Digital Assets</span>
-                <span class="ticker-dot"></span>
-                <span>Market Intelligence</span>
-                <span class="ticker-dot"></span>
-                <span>Scalable Systems</span>
-                <span class="ticker-dot"></span>
-                <span>Business Opportunities</span>
-                <span class="ticker-dot"></span>
-                <span>Information Arbitrage</span>
-                <span class="ticker-dot"></span>
-                <span>Data-Driven Ventures</span>
-                <span class="ticker-dot"></span>
-                <span>Digital Assets</span>
-                <span class="ticker-dot"></span>
-                <span>Market Intelligence</span>
-                <span class="ticker-dot"></span>
-                <span>Scalable Systems</span>
-                <span class="ticker-dot"></span>
-            </div>
-        </div>
-    </section>
+            <!-- Headline -->
+            <h1 class="headline">The Information Edge.</h1>
+            <p class="tagline">Discover. Build. Scale.</p>
+            <p class="description">Business opportunities in the information economy.</p>
 
-    <!-- Opportunities Section -->
-    <section id="opportunities" class="opportunities">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Opportunities</span>
-                <h2 class="section-title">The business landscape<br>is made of <em>information.</em></h2>
-                <p class="section-desc">
-                    We identify high-value business opportunities where information
-                    is the competitive advantage.
-                </p>
+            <!-- CTA -->
+            <div class="actions">
+                <a href="mailto:hello@infoventures.com.au" class="btn-main">Get in Touch</a>
             </div>
-            <div class="opps-grid">
-                <div class="opp-card opp-card-large">
-                    <div class="opp-card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-                        </svg>
-                    </div>
-                    <h3>Biz Op Discovery</h3>
-                    <p>We scan markets, analyse data, and surface business opportunities before they become mainstream. First-mover advantage, every time.</p>
-                    <div class="opp-card-tag">Core Service</div>
-                </div>
-                <div class="opp-card">
-                    <div class="opp-card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                        </svg>
-                    </div>
-                    <h3>Due Diligence</h3>
-                    <p>Deep-dive research and validation so you invest in opportunities with real substance.</p>
-                </div>
-                <div class="opp-card">
-                    <div class="opp-card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                        </svg>
-                    </div>
-                    <h3>Market Intelligence</h3>
-                    <p>Real-time data and insights that give you clarity on where the market is heading next.</p>
-                </div>
-                <div class="opp-card">
-                    <div class="opp-card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
-                    </div>
-                    <h3>Venture Building</h3>
-                    <p>From concept to cash flow. We help you launch and scale information-driven businesses.</p>
-                </div>
-                <div class="opp-card">
-                    <div class="opp-card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
-                        </svg>
-                    </div>
-                    <h3>Network Access</h3>
-                    <p>Connect with operators, investors, and partners in our curated deal-flow network.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- How It Works -->
-    <section id="how-it-works" class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Process</span>
-                <h2 class="section-title">Simple. Systematic.<br><em>Profitable.</em></h2>
-            </div>
-            <div class="steps-grid">
-                <div class="step">
-                    <div class="step-number">01</div>
-                    <h3>Discover</h3>
-                    <p>We continuously scan the information landscape for emerging business opportunities with high upside potential.</p>
+            <!-- Three pillars -->
+            <div class="pillars">
+                <div class="pillar">
+                    <span class="pillar-label">Discover</span>
+                    <span class="pillar-desc">Biz op intelligence</span>
                 </div>
-                <div class="step-connector">
-                    <svg viewBox="0 0 100 2" fill="none">
-                        <line x1="0" y1="1" x2="100" y2="1" stroke="currentColor" stroke-width="2" stroke-dasharray="6 4"/>
-                    </svg>
+                <div class="pillar-divider"></div>
+                <div class="pillar">
+                    <span class="pillar-label">Build</span>
+                    <span class="pillar-desc">Venture creation</span>
                 </div>
-                <div class="step">
-                    <div class="step-number">02</div>
-                    <h3>Validate</h3>
-                    <p>Every opportunity goes through rigorous due diligence. We verify the data, the market, and the economics.</p>
-                </div>
-                <div class="step-connector">
-                    <svg viewBox="0 0 100 2" fill="none">
-                        <line x1="0" y1="1" x2="100" y2="1" stroke="currentColor" stroke-width="2" stroke-dasharray="6 4"/>
-                    </svg>
-                </div>
-                <div class="step">
-                    <div class="step-number">03</div>
-                    <h3>Execute</h3>
-                    <p>Move fast with confidence. We provide the playbook, tools, and support to launch and scale your venture.</p>
+                <div class="pillar-divider"></div>
+                <div class="pillar">
+                    <span class="pillar-label">Scale</span>
+                    <span class="pillar-desc">Growth systems</span>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Ventures / Featured -->
-    <section id="ventures" class="ventures">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Ventures</span>
-                <h2 class="section-title">Active opportunities<br><em>right now.</em></h2>
-                <p class="section-desc">
-                    These are the spaces we're currently operating in. Each one vetted,
-                    validated, and ready for execution.
-                </p>
-            </div>
-            <div class="ventures-grid">
-                <article class="venture-card">
-                    <div class="venture-card-header">
-                        <div class="venture-status live">Live</div>
-                    </div>
-                    <h3>Digital Information Products</h3>
-                    <p>Build and sell high-margin digital products in underserved information niches.</p>
-                    <div class="venture-meta">
-                        <div class="venture-meta-item">
-                            <span class="venture-meta-label">Avg. ROI</span>
-                            <span class="venture-meta-value">340%</span>
-                        </div>
-                        <div class="venture-meta-item">
-                            <span class="venture-meta-label">Time to Revenue</span>
-                            <span class="venture-meta-value">30 days</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="venture-card">
-                    <div class="venture-card-header">
-                        <div class="venture-status live">Live</div>
-                    </div>
-                    <h3>Data Brokerage & Licensing</h3>
-                    <p>Aggregate, package, and license valuable data sets to businesses hungry for insights.</p>
-                    <div class="venture-meta">
-                        <div class="venture-meta-item">
-                            <span class="venture-meta-label">Avg. ROI</span>
-                            <span class="venture-meta-value">280%</span>
-                        </div>
-                        <div class="venture-meta-item">
-                            <span class="venture-meta-label">Time to Revenue</span>
-                            <span class="venture-meta-value">45 days</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="venture-card">
-                    <div class="venture-card-header">
-                        <div class="venture-status upcoming">Coming Soon</div>
-                    </div>
-                    <h3>AI-Powered Advisory</h3>
-                    <p>Leverage AI to deliver premium business intelligence and advisory services at scale.</p>
-                    <div class="venture-meta">
-                        <div class="venture-meta-item">
-                            <span class="venture-meta-label">Avg. ROI</span>
-                            <span class="venture-meta-value">500%+</span>
-                        </div>
-                        <div class="venture-meta-item">
-                            <span class="venture-meta-label">Time to Revenue</span>
-                            <span class="venture-meta-value">60 days</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
+        <!-- Bottom -->
+        <div class="bottom-bar">
+            <span class="bottom-text">&copy; 2025 Info Ventures. Sydney, Australia.</span>
         </div>
-    </section>
-
-    <!-- About / Quote Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <span class="section-tag">About</span>
-                    <h2 class="section-title">Built by operators,<br>for <em>operators.</em></h2>
-                    <p class="about-text">
-                        Info Ventures was founded on a simple premise: the biggest
-                        business opportunities are hiding in plain sight - inside
-                        data, trends, and information that most people overlook.
-                    </p>
-                    <p class="about-text">
-                        We're not consultants. We're operators who build alongside you.
-                        Every venture we recommend is one we'd put our own money into.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="about-highlight">
-                            <div class="about-highlight-number">$12M+</div>
-                            <div class="about-highlight-label">Revenue generated for partners</div>
-                        </div>
-                        <div class="about-highlight">
-                            <div class="about-highlight-number">150+</div>
-                            <div class="about-highlight-label">Ventures launched</div>
-                        </div>
-                        <div class="about-highlight">
-                            <div class="about-highlight-number">7</div>
-                            <div class="about-highlight-label">Countries operating in</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="about-quote-card">
-                        <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
-                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zm-14 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10H.017z"/>
-                        </svg>
-                        <blockquote>
-                            "In the information age, the best business opportunity is information itself."
-                        </blockquote>
-                        <cite>Info Ventures</cite>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="start" class="cta-section">
-        <div class="container">
-            <div class="cta-card">
-                <div class="cta-glow"></div>
-                <h2>Ready to find your<br>next venture?</h2>
-                <p>Join the operators who are building profitable businesses in the information economy.</p>
-                <div class="cta-actions">
-                    <a href="#contact" class="btn btn-light">
-                        Get Started Today
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                </div>
-                <p class="cta-note">Free consultation. No obligations.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Contact</span>
-                    <h2 class="section-title">Let's talk<br><em>opportunity.</em></h2>
-                    <p class="contact-text">
-                        Whether you have a specific opportunity in mind or want to explore
-                        what's possible, we're here to help.
-                    </p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                            </svg>
-                            <span>hello@infoventures.com.au</span>
-                        </div>
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                            </svg>
-                            <span>Sydney, Australia</span>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" required placeholder=" ">
-                        <label for="name">Full Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" required placeholder=" ">
-                        <label for="email">Email Address</label>
-                    </div>
-                    <div class="form-group">
-                        <select id="interest" name="interest" required>
-                            <option value="" disabled selected></option>
-                            <option value="discovery">Biz Op Discovery</option>
-                            <option value="intelligence">Market Intelligence</option>
-                            <option value="venture-building">Venture Building</option>
-                            <option value="partnership">Partnership</option>
-                            <option value="other">General Inquiry</option>
-                        </select>
-                        <label for="interest">I'm Interested In</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="4" placeholder=" "></textarea>
-                        <label for="message">Tell us about your goals</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#" class="footer-logo">
-                        <div class="logo-mark">IV</div>
-                        <span>Info Ventures</span>
-                    </a>
-                    <p class="footer-tagline">
-                        Operating in the information space.<br>Specialising in business opportunities.
-                    </p>
-                </div>
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#opportunities">Opportunities</a></li>
-                        <li><a href="#how-it-works">How It Works</a></li>
-                        <li><a href="#ventures">Ventures</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Twitter / X</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Disclaimer</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Info Ventures. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>
